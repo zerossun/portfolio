@@ -1,0 +1,167 @@
+@import "reset.scss";
+
+$mobile: "320px";
+$sm: "640px";
+$md: "768px";
+$lg: "1024px";
+$xl: "1280px";
+$xl2: "1536px";
+
+@mixin respond($size) {
+  @media screen and (max-width: $size) {
+    @content;
+  }
+}
+
+ul {
+  clear: both;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px 2%;
+  justify-content: center;
+  align-items: center;
+
+  .pokemon {
+    text-align: center;
+    width: 18%;
+    max-width: 150px;
+    @include respond($md) {
+      width: 23%;
+    }
+    @include respond($sm) {
+      width: 48%;
+    }
+    &_img {
+      padding: 8px;
+      border: 1px solid #e8e8e8;
+      border-radius: 10px;
+      transition: 0.5s;
+      &_div {
+        position: relative;
+        padding-top: 100%;
+        width: 100%;
+        overflow: hidden;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+
+        & img {
+          position: absolute;
+          width: 100%;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          max-width: 100%;
+          height: auto;
+        }
+        &:hover {
+          width: 100%;
+        }
+      }
+    }
+    .Txt {
+      padding: 6px;
+      text-align: left;
+    }
+    p {
+      margin: 5px 0;
+    }
+
+    a {
+      text-decoration: none;
+      color: #333;
+    }
+  }
+}
+.bg {
+  background: #da343c;
+  padding: 32px;
+  height: calc(100vh - 160px);
+  position: relative;
+  @include respond($md) {
+    height: calc(100vh - 134px);
+  }
+  .DetailPage {
+    padding: 16px;
+    border: 3px solid #333;
+    border-radius: 10px;
+    background: url(../assets/poket_bg.jpeg) repeat;
+    height: 100%;
+    position: relative;
+
+    &_arr {
+      display: flex;
+      justify-content: space-between;
+      position: absolute;
+      width: 100%;
+      left: 0;
+      bottom: -24px;
+      & button {
+        background-color: #333;
+        padding: 6px 12px;
+        border-radius: 999px;
+        color: #fff;
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+}
+
+//Detail
+.Detail {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  @include respond($md) {
+    display: block;
+  }
+  & div {
+    @include respond($md) {
+      width: 100%;
+    }
+    & img {
+      width: 100%;
+      max-width: 450px;
+      margin: 0 auto;
+      @include respond($md) {
+        max-width: 250px;
+        margin: 0 auto;
+      }
+    }
+    .table {
+      padding: 16px;
+      border: 1px solid #000;
+      border-radius: 7px;
+      display: block;
+      width: 100%;
+      background-color: #fff;
+      & tbody {
+        &:first-of-type {
+          padding-bottom: 16px;
+          position: relative;
+        }
+        width: 100%;
+        display: grid;
+        padding: 0;
+        & tr {
+          & th,
+          td {
+            width: 50%;
+            display: inline-block;
+            text-align: left;
+            & h4 {
+              font-size: 16px;
+              font-weight: 500;
+              color: #858585;
+              margin-bottom: 6px;
+            }
+            & p {
+            }
+          }
+        }
+      }
+    }
+  }
+}
