@@ -8,7 +8,7 @@ import Work5 from "./page/section/work/Work5";
 import Work6 from "./page/section/work/Work6";
 import Work7 from "./page/section/work/Work7";
 import Create from "./page/Create";
-import UseEffect from "./page/UseEffect";
+
 import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
 import {ThemeProvider} from "styled-components";
 import theme from "./scss/theme";
