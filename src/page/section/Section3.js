@@ -5,19 +5,18 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import {Link} from "react-router-dom";
 import star from "../../assets/image/work/star.png";
-import starAct from "../../assets/image/work/starAct.png";
+
 import pin from "../../assets/image/work/pin.png";
-import pinAct from "../../assets/image/work/pinAct.png";
+
 import file from "../../assets/image/work/file.png";
-import fileAct from "../../assets/image/work/fileAct.png";
+
 import location from "../../assets/image/work/location.png";
-import locationAct from "../../assets/image/work/locationAct.png";
+
 import mail from "../../assets/image/work/mail.png";
-import mailAct from "../../assets/image/work/mailAct.png";
+
 import mobile from "../../assets/image/work/mobile.png";
-import mobileAct from "../../assets/image/work/mobileAct.png";
+
 import setting from "../../assets/image/work/setting.png";
-import settingAct from "../../assets/image/work/settingAct.png";
 
 import {Swiper, SwiperSlide} from "swiper/react";
 
@@ -215,9 +214,6 @@ const Image = styled.div`
   background-repeat: no-repeat;
   width: 60%;
   transition: background-image 0.3s ease-in-out;
-  &:hover {
-    background-image: url(${(props) => props.hoverImg});
-  }
 `;
 
 const Section2 = () => {
@@ -243,7 +239,7 @@ const Section2 = () => {
                 <WorkItem>
                   <WorkImg bgColor="#FDE9E9">
                     <AfterBorder position="right" />
-                    <Image initialImg={pin} hoverImg={pinAct} />
+                    <Image initialImg={pin} />
                   </WorkImg>
                   <WorkTxt>
                     <WorkTitle>
@@ -263,7 +259,7 @@ const Section2 = () => {
               <Left>
                 <WorkItem>
                   <WorkImg bgColor="#F2E482">
-                    <Image initialImg={star} hoverImg={starAct} />
+                    <Image initialImg={star} />
                     <AfterBorder position="left" />
                   </WorkImg>
                   <WorkTxt>
@@ -285,7 +281,7 @@ const Section2 = () => {
                 <WorkItem>
                   <WorkImg bgColor="#EDE9D0">
                     <AfterBorder position="right" />
-                    <Image initialImg={file} hoverImg={fileAct} />
+                    <Image initialImg={file} />
                   </WorkImg>
                   <WorkTxt>
                     <WorkTitle>
@@ -306,7 +302,7 @@ const Section2 = () => {
                   <Ongoing>Ongoing</Ongoing>
                   <WorkItem>
                     <WorkImg bgColor="#D7F3FF">
-                      <Image initialImg={location} hoverImg={locationAct} />
+                      <Image initialImg={location} />
                       <AfterBorder position="left" />
                     </WorkImg>
                     <WorkTxt>
@@ -357,7 +353,7 @@ const Section2 = () => {
                 <Right>
                   <WorkItem>
                     <WorkImg bgColor="#FFBDA0">
-                      <Image initialImg={setting} hoverImg={settingAct} />
+                      <Image initialImg={setting} />
                     </WorkImg>
                     <WorkTxt>
                       <WorkTitle>
@@ -375,7 +371,7 @@ const Section2 = () => {
                 <Right>
                   <WorkItem>
                     <WorkImg bgColor="#BBD3E9">
-                      <Image initialImg={mobile} hoverImg={mobileAct} />
+                      <Image initialImg={mobile} />
                     </WorkImg>
                     <WorkTxt>
                       <WorkTitle>
@@ -393,7 +389,7 @@ const Section2 = () => {
                 <Right>
                   <WorkItem>
                     <WorkImg bgColor="#C7FF9E">
-                      <Image initialImg={mail} hoverImg={mailAct} />
+                      <Image initialImg={mail} />
                     </WorkImg>
                     <WorkTxt>
                       <WorkTitle>
