@@ -3,7 +3,7 @@ import WorkHeader from "../../../component/WorkHeader";
 import Virtupia from "../../../assets/Detail/Virtupia.png";
 import Virtupia1 from "../../../assets/Detail/Virtupia1.png";
 import Virtupia2 from "../../../assets/Detail/Virtupia2.png";
-
+import Footer from "../../Footer";
 import {
   WorkCon,
   WorkDiv,
@@ -88,6 +88,7 @@ const Work3 = () => {
           </WorkBtn>
         </WorkDiv>
       </WorkCon>
+      <Footer />
     </>
   );
 };

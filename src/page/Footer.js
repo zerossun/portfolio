@@ -1,17 +1,14 @@
 import React from "react";
 import theme from "../scss/theme";
 import styled from "styled-components";
-import "aos/dist/aos.css";
+import "animate.css";
 
 const Foot = styled.footer`
   min-height: 100vh;
-  padding: 100px 64px;
+  padding: 100px 12px;
   text-align: center;
   width: 100%;
   position: relative;
-  @media ${theme.md} {
-    padding: 0px ${({theme}) => theme.padding.md};
-  }
 `;
 
 const Contact = styled.h1`
@@ -48,7 +45,7 @@ const Mail = styled.strong`
   white-space: normal;
   word-wrap: break-word;
   @media ${theme.md} {
-    font-size: 3rem;
+    font-size: 2rem;
     word-break: break-all;
     padding: 0 12px;
   }
@@ -83,7 +80,9 @@ function Footer() {
           <br />
           메일 보내주시면 1~2일 내로 회신드립니다 :-)
         </Txt>
-        <Mail data-aos="fade-up">wonsunyoung0703@gmail.com</Mail>
+        <Mail data-aos="fade-up" className="animate__animated animate__bounce">
+          wonsunyoung0703@gmail.com
+        </Mail>
       </TxtDiv>
       <Copy>© Copyright 2022 - 2024 SunYoung Won.</Copy>
     </Foot>

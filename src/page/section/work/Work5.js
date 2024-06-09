@@ -3,7 +3,7 @@ import WorkHeader from "../../../component/WorkHeader";
 import Todo from "../../../assets/Detail/Todo.png";
 import Todo1 from "../../../assets/Detail/Todo1.png";
 import Todo2 from "../../../assets/Detail/Todo2.png";
-
+import Footer from "../../Footer";
 import {
   WorkCon,
   WorkDiv,
@@ -93,6 +93,7 @@ const Work5 = () => {
           </WorkBtnDiv>
         </WorkDiv>
       </WorkCon>
+      <Footer />
     </>
   );
 };

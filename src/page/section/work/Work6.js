@@ -3,7 +3,7 @@ import WorkHeader from "../../../component/WorkHeader";
 import Pocket from "../../../assets/Detail/Pocket.png";
 import Pocket1 from "../../../assets/Detail/Pocket1.png";
 import Pocket2 from "../../../assets/Detail/Pocket2.png";
-
+import Footer from "../../Footer";
 import {
   WorkCon,
   WorkDiv,
@@ -99,6 +99,7 @@ const Work6 = () => {
           </WorkBtnDiv>
         </WorkDiv>
       </WorkCon>
+      <Footer />
     </>
   );
 };

@@ -12,7 +12,6 @@ import ScrollToTop from "./component/ScrollToTop";
 import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
 import {ThemeProvider} from "styled-components";
 
-import Footer from "./page/Footer";
 import "./App.css";
 import "../src/scss/reset.scss";
 
@@ -32,7 +31,6 @@ function App() {
           <Route path="/work6" element={<Work6 />} />
           <Route path="/work7" element={<Work7 />} />
         </Routes>
-        <Footer />
       </Router>
     </>
   );

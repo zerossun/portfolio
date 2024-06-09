@@ -1,7 +1,7 @@
 import React from "react";
 import WorkHeader from "../../../component/WorkHeader";
 import DuckTest from "../../../assets/Detail/DuckTest.png";
-
+import Footer from "../../Footer";
 import {
   WorkCon,
   WorkDiv,
@@ -70,6 +70,7 @@ const Work7 = () => {
           </WorkBtnDiv>
         </WorkDiv>
       </WorkCon>
+      <Footer />
     </>
   );
 };

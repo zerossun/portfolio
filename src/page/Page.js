@@ -4,7 +4,7 @@ import styled from "styled-components";
 import Section1 from "./section/Section1";
 import Section2 from "./section/Section2";
 import Section3 from "./section/Section3";
-
+import Footer from "./Footer";
 // styled-components
 
 const Section1Wrapper = styled.section`
@@ -38,6 +38,7 @@ const Page = () => {
           <Section3 />
         </Section1Wrapper>
       </Max>
+      <Footer />
     </>
   );
 };
