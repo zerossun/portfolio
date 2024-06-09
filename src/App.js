@@ -17,7 +17,7 @@ import "./App.css";
 import "../src/scss/reset.scss";
 
 import styled from "styled-components";
-import Footer from "./page/Footer";
+
 const Back = styled.main`
   width: 100%;
 
@@ -41,7 +41,6 @@ function App() {
             <Route path="/work7" element={<Work7 />} />
           </Routes>
         </Router>
-        <Footer />
       </Back>
     </>
   );

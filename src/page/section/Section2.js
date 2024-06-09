@@ -235,7 +235,7 @@ const Section2 = () => {
                 <strong style={{color: theme.black, fontWeight: 600}}>
                   컴퓨터활용능력2급
                 </strong>
-                &nbsp; (2021.07.09)
+                &nbsp; (대한상공회의소 / 2021.07.09)
               </SubDd>
             </div>
             <div className="relative mt-6">
