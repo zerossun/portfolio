@@ -3,7 +3,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import WorkHeader from "../../../component/WorkHeader";
 import Logiall from "../../../assets/Detail/Logiall.png";
-import Footer from "../../Footer";
+
 import {
   WorkCon,
   WorkDiv,
@@ -63,7 +63,6 @@ const Work1 = () => {
           </WorkBtn>
         </WorkDiv>
       </WorkCon>
-      <Footer />
     </>
   );
 };

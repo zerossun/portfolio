@@ -7,41 +7,33 @@ import Work4 from "./page/section/work/Work4";
 import Work5 from "./page/section/work/Work5";
 import Work6 from "./page/section/work/Work6";
 import Work7 from "./page/section/work/Work7";
-import Create from "./page/Create";
 
+import ScrollToTop from "./component/ScrollToTop";
 import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
 import {ThemeProvider} from "styled-components";
-import theme from "./scss/theme";
 
+import Footer from "./page/Footer";
 import "./App.css";
 import "../src/scss/reset.scss";
-
-import styled from "styled-components";
-
-const Back = styled.main`
-  width: 100%;
-
-  margin: 0 auto;
-`;
 
 function App() {
   return (
     <>
-      <Back>
-        <Router>
-          <Routes>
-            <Route path="/" element={<Page />} />
-            {/* {/* <Route path="/UseEffect" element={<UseEffect />} /> */}
-            <Route path="/work1" element={<Work1 />} />
-            <Route path="/work2" element={<Work2 />} />
-            <Route path="/work3" element={<Work3 />} />
-            <Route path="/work4" element={<Work4 />} />
-            <Route path="/work5" element={<Work5 />} />
-            <Route path="/work6" element={<Work6 />} />
-            <Route path="/work7" element={<Work7 />} />
-          </Routes>
-        </Router>
-      </Back>
+      <Router>
+        <ScrollToTop />
+        <Routes>
+          <Route path="/" element={<Page />} />
+
+          <Route path="/work1" element={<Work1 />} />
+          <Route path="/work2" element={<Work2 />} />
+          <Route path="/work3" element={<Work3 />} />
+          <Route path="/work4" element={<Work4 />} />
+          <Route path="/work5" element={<Work5 />} />
+          <Route path="/work6" element={<Work6 />} />
+          <Route path="/work7" element={<Work7 />} />
+        </Routes>
+        <Footer />
+      </Router>
     </>
   );
 }

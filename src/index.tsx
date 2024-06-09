@@ -4,7 +4,7 @@ import "./index.css";
 import App from "./App";
 import {ThemeProvider} from "styled-components";
 import theme from "./scss/theme";
-
+import Footer from "./page/Footer";
 import reportWebVitals from "./reportWebVitals";
 
 const root = ReactDOM.createRoot(
