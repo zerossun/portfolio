@@ -15,8 +15,10 @@ const Header = styled.header`
   width: calc(100% - 128px);
   max-width: 1152px;
   z-index: 1;
+  left: 50%;
+  transform: translateX(-50%);
   @media ${theme.md} {
-    width: calc(100% - 48px);
+    width: calc(100% - 32px);
   }
 `;
 const Type = styled.h3`

@@ -5,10 +5,13 @@ import "aos/dist/aos.css";
 
 const Foot = styled.footer`
   min-height: 100vh;
-  padding: 100px 12px;
+  padding: 100px 64px;
   text-align: center;
   width: 100%;
   position: relative;
+  @media ${theme.md} {
+    padding: 0px ${({theme}) => theme.padding.md};
+  }
 `;
 
 const Contact = styled.h1`

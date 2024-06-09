@@ -7,13 +7,17 @@ export const WorkCon = styled.div`
   max-width: 1280px;
   margin: 0 auto;
   padding: 0px 64px;
+  min-height: 100vh;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
   @media ${theme.md} {
-    padding: 0px ${({theme}) => theme.padding.lg};
+    padding: 0px ${({theme}) => theme.padding.md};
   }
 `;
 
 export const WorkDiv = styled.div`
   margin-top: 76px;
+  flex: 1;
 `;
 
 export const WorkImgDiv = styled.div`
@@ -56,6 +60,9 @@ export const WorkTitle = styled.h2`
   font-size: 2.5rem;
   color: ${({theme}) => theme.main};
   padding: ${theme.padding.sm} 0;
+  @media ${theme.md} {
+    font-size: 2rem;
+  }
 `;
 export const WorkTxtDown = styled.div`
   color: ${({theme}) => theme.disabled};
