@@ -34,8 +34,12 @@ const Main2 = styled.div`
 `;
 
 const Image = styled.div`
-  border-radius: 8px;
+  border-radius: 16px;
   margin: 0 80px 0 0;
+  @media ${theme.md} {
+    border: 2px solid ${theme.sub2};
+    margin: 0 40px 0 0;
+  }
 `;
 
 const Picture = styled.picture`
@@ -51,6 +55,11 @@ const Picture = styled.picture`
     top: 30px;
     width: calc(100% - 30px);
     z-index: -1;
+  }
+  @media ${theme.md} {
+    &::after {
+      border: 0px;
+    }
   }
 `;
 
@@ -128,7 +137,7 @@ const Section2 = () => {
             </Picture>
           </Image>
         </div>
-        <div className="pt-16 md:pt-6 basis-full md:basis-1/2">
+        <div className="pt-4 md:pt-6 basis-full md:basis-1/2">
           <Name>WON SUN YOUNG</Name>
           <p className="mt-2">
             안녕하세요! 유연한 퍼블리셔 원선영입니다.
