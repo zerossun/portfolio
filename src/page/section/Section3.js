@@ -358,7 +358,7 @@ const Section2 = () => {
                     <WorkTxt>
                       <WorkTitle>
                         <WorkStrong>녹음 투두리스트</WorkStrong>
-                        <WorkSpan>23.04 - 23.10</WorkSpan>
+                        <WorkSpan>24.03 - 24.05</WorkSpan>
                       </WorkTitle>
                       <WorkP>React / styled-component / tsx</WorkP>
                     </WorkTxt>
