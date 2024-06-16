@@ -4,32 +4,28 @@ import styled from "styled-components";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import {Link} from "react-router-dom";
-import star from "../../assets/image/work/star.png";
 
-import pin from "../../assets/image/work/pin.png";
-
-import file from "../../assets/image/work/file.png";
-
-import location from "../../assets/image/work/location.png";
-
-import mail from "../../assets/image/work/mail.png";
-
-import mobile from "../../assets/image/work/mobile.png";
-
-import setting from "../../assets/image/work/setting.png";
-
+// swiper
 import {Swiper, SwiperSlide} from "swiper/react";
-
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-
-// import required modules
 import {Autoplay} from "swiper/modules";
 
+// image
+import Logiall from "../../assets/image/Wlogo/Logiall.png";
+import Logiway from "../../assets/image/Wlogo/Logiway2.png";
+import Virtupia from "../../assets/image/Wlogo/virtupia.png";
+import Momoquick from "../../assets/image/Wlogo/momoquick.png";
+import star from "../../assets/image/work/star.png";
+import mail from "../../assets/image/work/mail.png";
+import mobile from "../../assets/image/work/mobile.png";
+
+// css
 const Main3 = styled.div`
   width: 100%;
   margin: 0 auto;
+  padding-top: 100px;
   height: 100%;
   overflow: hidden;
   display: block;
@@ -237,13 +233,13 @@ const Section2 = () => {
             >
               <Right>
                 <WorkItem>
-                  <WorkImg bgColor="#FDE9E9">
+                  <WorkImg bgColor="#FFE5DB">
                     <AfterBorder position="right" />
-                    <Image initialImg={pin} />
+                    <Image initialImg={Logiall} />
                   </WorkImg>
                   <WorkTxt>
                     <WorkTitle>
-                      <WorkStrong>로지올 홈페이지 개편</WorkStrong>
+                      <WorkStrong>생각대로 홈페이지 개편</WorkStrong>
                       <WorkSpan>23.12 - 24.03</WorkSpan>
                     </WorkTitle>
                     <WorkP>Vue / Vuetify / scss</WorkP>
@@ -259,7 +255,7 @@ const Section2 = () => {
               <Left>
                 <WorkItem>
                   <WorkImg bgColor="#F2E482">
-                    <Image initialImg={star} />
+                    <Image initialImg={Logiway} />
                     <AfterBorder position="left" />
                   </WorkImg>
                   <WorkTxt>
@@ -279,9 +275,9 @@ const Section2 = () => {
             >
               <Right>
                 <WorkItem>
-                  <WorkImg bgColor="#EDE9D0">
+                  <WorkImg bgColor="#FDE9E9">
                     <AfterBorder position="right" />
-                    <Image initialImg={file} />
+                    <Image initialImg={Virtupia} />
                   </WorkImg>
                   <WorkTxt>
                     <WorkTitle>
@@ -294,26 +290,24 @@ const Section2 = () => {
               </Right>
             </Link>
             <Link
+              to={`/Work4`}
               data-aos="fade-right"
               className="block w-full py-4 overflow-hidden"
             >
               <Left>
-                <Disabled>
-                  <Ongoing>Ongoing</Ongoing>
-                  <WorkItem>
-                    <WorkImg bgColor="#D7F3FF">
-                      <Image initialImg={location} />
-                      <AfterBorder position="left" />
-                    </WorkImg>
-                    <WorkTxt>
-                      <WorkTitle>
-                        <WorkStrong>모모퀵 홈페이지</WorkStrong>
-                        <WorkSpan>22.06 - 22.10</WorkSpan>
-                      </WorkTitle>
-                      <WorkP>Vue / css / git</WorkP>
-                    </WorkTxt>
-                  </WorkItem>
-                </Disabled>
+                <WorkItem>
+                  <WorkImg bgColor="#D7F3FF">
+                    <Image initialImg={Momoquick} />
+                    <AfterBorder position="left" />
+                  </WorkImg>
+                  <WorkTxt>
+                    <WorkTitle>
+                      <WorkStrong>모모퀵 홈페이지</WorkStrong>
+                      <WorkSpan>22.06 - 22.10</WorkSpan>
+                    </WorkTitle>
+                    <WorkP>Vue / css / git</WorkP>
+                  </WorkTxt>
+                </WorkItem>
               </Left>
             </Link>
           </ItemBox>
@@ -353,7 +347,7 @@ const Section2 = () => {
                 <Right>
                   <WorkItem>
                     <WorkImg bgColor="#FFBDA0">
-                      <Image initialImg={setting} />
+                      <Image initialImg={mobile} />
                     </WorkImg>
                     <WorkTxt>
                       <WorkTitle>
@@ -371,7 +365,7 @@ const Section2 = () => {
                 <Right>
                   <WorkItem>
                     <WorkImg bgColor="#BBD3E9">
-                      <Image initialImg={mobile} />
+                      <Image initialImg={star} />
                     </WorkImg>
                     <WorkTxt>
                       <WorkTitle>

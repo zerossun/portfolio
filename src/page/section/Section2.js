@@ -8,7 +8,6 @@ import {ReactComponent as ReactSvg} from "../../assets/logo/ReactSvg.svg";
 import {ReactComponent as VueSvg} from "../../assets/logo/VueSvg.svg";
 import {ReactComponent as ScssSvg} from "../../assets/logo/ScssSvg.svg";
 import {ReactComponent as JspSvg} from "../../assets/logo/JspSvg.svg";
-import {ReactComponent as VuetifySvg} from "../../assets/logo/VuetifySvg.svg";
 import {ReactComponent as TailwindSvg} from "../../assets/logo/TailwindSvg.svg";
 import {ReactComponent as CssSvg} from "../../assets/logo/CssSvg.svg";
 import {ReactComponent as HtmlSvg} from "../../assets/logo/HtmlSvg.svg";
@@ -17,6 +16,7 @@ import {ReactComponent as StyledSvg} from "../../assets/logo/StyledSvg.svg";
 import {ReactComponent as Git} from "../../assets/logo/Git.svg";
 import {ReactComponent as PsSvg} from "../../assets/logo/PsSvg.svg";
 import {ReactComponent as ZeplinSvg} from "../../assets/logo/ZeplinSvg.svg";
+import {ReactComponent as NextSvg} from "../../assets/image/nextSvg.svg";
 
 // styled-components
 
@@ -117,13 +117,36 @@ const SubDd = styled.dd`
   }
 `;
 
+const Br = styled.div`
+  display: block;
+  @media ${theme.md} {
+    display: none;
+  }
+`;
+
+const P = styled.p`
+  word-break: keep-all;
+  white-space: normal;
+`;
+
+const More = styled.button`
+  margin-top: 32px;
+  color: ${({theme}) => theme.white};
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  border-radius: 999px;
+  padding: ${({theme}) => theme.padding.xs} ${({theme}) => theme.padding.sm};
+  background: ${({theme}) => theme.sub3};
+`;
+
 const Section2 = () => {
   useEffect(() => {
     AOS.init();
   }, []);
   return (
     <Main2>
-      <div className="flex flex-wrap basis-full ">
+      <section className="flex flex-wrap basis-full ">
         <div
           data-aos="flip-left"
           data-aos-easing="ease-out-cubic"
@@ -139,20 +162,24 @@ const Section2 = () => {
         </div>
         <div className="pt-4 md:pt-6 basis-full md:basis-1/2">
           <Name>WON SUN YOUNG</Name>
-          <p className="mt-2">
-            안녕하세요! 유연한 퍼블리셔 원선영입니다.
-            <br /> 여러 프로젝트에서 활용 가능한 인재가 되는 것을 목표로 합니다.
-          </p>
-          <p className="mt-2">
+          <P className="mt-2">
+            안녕하세요! 직관적이고 효율적인 인터페이스를 제공하는 퍼블리셔
+            원선영입니다.
+            <Br />
+            여러 프로젝트에서 다방면으로 활용 가능한 인재가 되는 것을 목표로
+            합니다.
+          </P>
+          <P className="mt-2">
             React/Vue 등 다양한 프레임워크와 라이브러리를 활용하여 사용자
-            친화적인 인터페이스를 능숙하게 그려낼 수 있어요.
-            <br /> 웹표준과 웹접근성에 깊은 관심을 가지고 이를 고려한 웹
-            페이지를 그려냅니다.
-          </p>
-          <p className="mt-2">
-            사용자들의 요구와 의견을 수용하고 다양한 직군과 함께 작업하는 것을
-            즐깁니다.
-          </p>
+            친화적인 인터페이스를
+            <Br /> 능숙하게 그려낼 수 있어요. 웹표준과 웹접근성에 깊은 관심을
+            가지고 이를 고려한
+            <Br /> 웹 페이지를 그려냅니다.
+          </P>
+          <P className="mt-2">
+            '코드는 간결하게, 업무는 세심하게!' 라는 마음으로 끊임없이 배우고
+            익히기를 즐깁니다 :-)
+          </P>
           <Ul className="grid grid-cols-6 gap-4 mt-6">
             <li>
               <LiRound>
@@ -220,10 +247,9 @@ const Section2 = () => {
               <SubDt>경력</SubDt>
               <SubDd>
                 <strong style={{color: theme.black, fontWeight: 600}}>
-                  생각대로
+                  로지올
                 </strong>
-                &nbsp;&nbsp; (플랫폼 1팀 프론트엔드팀 ux 개발자 / 2022.06 -
-                재직중)
+                &nbsp; (플랫폼 1팀 프론트엔드팀 ux 개발자 / 2022.06 - 재직중)
               </SubDd>
               <SubDd>
                 <strong style={{color: theme.black, fontWeight: 600}}>
@@ -269,8 +295,18 @@ const Section2 = () => {
               </SubDd>
             </div>
           </Sub>
+          <More
+            onClick={() =>
+              window.open(
+                "https://amethyst-pint-e98.notion.site/HELLO-I-m-SUNYOUNG-78aa1d6b87f547bd8ef4b5c2faf90b74?pvs=4"
+              )
+            }
+          >
+            자기소개 더 보기!
+            <NextSvg className="ml-1" />
+          </More>
         </div>
-      </div>
+      </section>
     </Main2>
   );
 };

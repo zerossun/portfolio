@@ -21,6 +21,7 @@ import {
   DetailView,
   DetailDiv,
   WorkBtnDiv,
+  ViewPic1,
   GitBtn,
 } from "../../../scss/Work";
 import theme from "../../../scss/theme";
@@ -49,29 +50,40 @@ const Work5 = () => {
                 프로그램입니다.
               </WorkP>
               <WorkP>
-                typescript를 이용하여 보다 안전하고 편리하게 관리할 수 있도록
-                하였습니다.
+                typescript를 이용하여 보다 안전하고 편리하게 컴포넌트를 관리할
+                수 있도록 하였습니다.
               </WorkP>
               <WorkP>
-                scss와 styled-components를 사용하여 중복되는 css 코드를
-                최소화하였습니다.
+                useState 훅을 사용하여 투두리스트의 상태를 관리하며, useEffect를
+                통해 로컬 스토리지에 데이터를 저장하여 페이지를 새로고침해도
+                데이터가 유지됩니다.
               </WorkP>
             </WorkTxtDown>
             <DetailView>
               <WorkDetail>Detail view</WorkDetail>
               <DetailDiv className="flex flex-col md:flex-row">
-                <WorkImgDiv className="md:basis-2/3 basis-full">
-                  <WorkPic>
-                    <source srcset={Todo1} media={`(min-width: ${theme.md})`} />
-                    <WorkImg src={Todo1} alt="Todo1" />
-                  </WorkPic>
-                </WorkImgDiv>
-                <WorkImgDiv className="mt-6 ml-0 md:basis-1/3 basis-full md:ml-10 md:mt-0">
-                  <WorkPic>
-                    <source srcset={Todo2} media={`(min-width: ${theme.md})`} />
-                    <WorkImg src={Todo2} alt="Todo2" />
-                  </WorkPic>
-                </WorkImgDiv>
+                <ViewPic1 className="md:basis-2/3 basis-full">
+                  <WorkImgDiv>
+                    <WorkPic>
+                      <source
+                        srcset={Todo1}
+                        media={`(min-width: ${theme.md})`}
+                      />
+                      <WorkImg src={Todo1} alt="Todo1" />
+                    </WorkPic>
+                  </WorkImgDiv>
+                </ViewPic1>
+                <ViewPic1 className="mt-6 ml-0 md:basis-1/3 basis-full md:ml-10 md:mt-0">
+                  <WorkImgDiv>
+                    <WorkPic>
+                      <source
+                        srcset={Todo2}
+                        media={`(min-width: ${theme.md})`}
+                      />
+                      <WorkImg src={Todo2} alt="Todo2" />
+                    </WorkPic>
+                  </WorkImgDiv>
+                </ViewPic1>
               </DetailDiv>
             </DetailView>
           </WorkTxt>

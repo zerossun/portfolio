@@ -3,6 +3,9 @@ import WorkHeader from "../../../component/WorkHeader";
 import Virtupia from "../../../assets/Detail/Virtupia.png";
 import Virtupia1 from "../../../assets/Detail/Virtupia1.png";
 import Virtupia2 from "../../../assets/Detail/Virtupia2.png";
+import Momoquick from "../../../assets/image/work/momoquick.png";
+import Momoquick1 from "../../../assets/image/work/momoquick_m.png";
+import Momoquick2 from "../../../assets/image/work/Momoquick2.png";
 import Footer from "../../Footer";
 import {
   WorkCon,
@@ -31,8 +34,8 @@ const Work4 = () => {
         <WorkDiv>
           <WorkImgDiv>
             <WorkPic>
-              <source srcset={Virtupia} media={`(min-width: ${theme.md})`} />
-              <WorkImg src={Virtupia} alt="Virtupia" />
+              <source srcset={Momoquick} media={`(min-width: ${theme.md})`} />
+              <WorkImg src={Momoquick} alt="Virtupia" />
             </WorkPic>
           </WorkImgDiv>
           <WorkTxt>
@@ -42,11 +45,17 @@ const Work4 = () => {
             </WorkTxtUp>
             <WorkTxtDown>
               <WorkSpan>퍼블리싱 | 100%</WorkSpan>
-              <WorkP>사이트 폐쇄</WorkP>
 
               <WorkP>
-                웹/앱 형식으로 제작되어 어느 어플리케이션에서도 반응되게
-                제작하였습니다.
+                사용자의 편의성을 고려하여 UI를 구성하고 최적화했습니다.
+              </WorkP>
+              <WorkP>
+                다양한 디바이스에서 일관된 사용 경험을 제공하기 위해 반응형
+                디자인을 구현했습니다.
+              </WorkP>
+              <WorkP>
+                일관된 디자인 요소와 컴포넌트를 관리하기 위해 디자인 시스템을
+                구축하고 유지보수했습니다.
               </WorkP>
             </WorkTxtDown>
             <DetailView>
@@ -55,19 +64,19 @@ const Work4 = () => {
                 <WorkImgDiv className="md:basis-2/3 basis-full">
                   <WorkPic>
                     <source
-                      srcset={Virtupia1}
+                      srcset={Momoquick2}
                       media={`(min-width: ${theme.md})`}
                     />
-                    <WorkImg src={Virtupia1} alt="Virtupia1" />
+                    <WorkImg src={Momoquick2} alt="Virtupia1" />
                   </WorkPic>
                 </WorkImgDiv>
                 <WorkImgDiv className="mt-6 ml-0 md:basis-1/3 basis-full md:ml-10 md:mt-0">
                   <WorkPic>
                     <source
-                      srcset={Virtupia2}
+                      srcset={Momoquick1}
                       media={`(min-width: ${theme.md})`}
                     />
-                    <WorkImg src={Virtupia2} alt="Logiway2" />
+                    <WorkImg src={Momoquick1} alt="Logiway2" />
                   </WorkPic>
                 </WorkImgDiv>
               </DetailDiv>

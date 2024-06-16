@@ -25,6 +25,7 @@ export const WorkImgDiv = styled.div`
   border: 1px solid ${({theme}) => theme.gray};
   display: flex;
   align-items: center;
+  height:100%;
 }
 `;
 
@@ -108,5 +109,11 @@ export const DetailView = styled.div`
 export const DetailDiv = styled.div`
   margin-top: ${theme.padding.md};
 `;
-export const ViewPic1 = styled.div``;
+export const ViewPic1 = styled.div`
+  max-height: 650px;
+`;
 export const ViewPic2 = styled.div``;
+export const Video = styled.video`
+  border-radius: 16px;
+  height: 650px;
+`;

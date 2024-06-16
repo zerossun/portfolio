@@ -84,7 +84,7 @@ const Section1 = () => {
           <Text isVisible={isVisible}>
             직관적이고 효율적인 인터페이스를 제공하는
             <br />
-            원선영입니다.
+            퍼블리셔 원선영입니다.
           </Text>
         </div>
         <Right>

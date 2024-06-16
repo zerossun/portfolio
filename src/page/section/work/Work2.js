@@ -3,6 +3,7 @@ import WorkHeader from "../../../component/WorkHeader";
 import Logiway from "../../../assets/Detail/Logiway.png";
 import Logiway1 from "../../../assets/Detail/Logiway1.png";
 import Logiway2 from "../../../assets/Detail/Logiway2.png";
+import Logiway3 from "../../../assets/image/work/logiway.mp4";
 import Footer from "../../Footer";
 import {
   WorkCon,
@@ -20,6 +21,7 @@ import {
   WorkBtn,
   DetailView,
   DetailDiv,
+  Video,
 } from "../../../scss/Work";
 import theme from "../../../scss/theme";
 
@@ -61,11 +63,16 @@ const Work2 = () => {
               <DetailDiv className="flex flex-col md:flex-row">
                 <WorkImgDiv className="md:basis-2/3 basis-full">
                   <WorkPic>
-                    <source
-                      srcset={Logiway1}
-                      media={`(min-width: ${theme.md})`}
-                    />
-                    <WorkImg src={Logiway1} alt="Logiway1" />
+                    <Video
+                      muted
+                      autoPlay
+                      loop
+                      width="100%"
+                      height="650px"
+                      controls="controls"
+                    >
+                      <source src={Logiway3} type="video/mp4" />
+                    </Video>
                   </WorkPic>
                 </WorkImgDiv>
                 <WorkImgDiv className="mt-6 ml-0 md:basis-1/3 basis-full md:ml-10 md:mt-0">
@@ -78,6 +85,16 @@ const Work2 = () => {
                   </WorkPic>
                 </WorkImgDiv>
               </DetailDiv>
+              <WorkTxtDown className="mt-4">
+                <WorkP>
+                  css-animation을 활용하여 시각적 매력을 증가시켜 사용자의
+                  관심을 끌고, 더 오래 머무르게 구현하였습니다.
+                </WorkP>
+                <WorkP>
+                  앱상에서는 불필요한 시각적 정보를 제거하고 정보의 전달력을
+                  높였습니다.
+                </WorkP>
+              </WorkTxtDown>
             </DetailView>
           </WorkTxt>
           <WorkBtn
