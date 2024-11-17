@@ -40,10 +40,6 @@ const Work1 = () => {
           </WorkImgDiv>
           <WorkTxt>
             <WorkTxtUp>
-              <strong className="block text-rose-800">
-                현재 웹 어드민의 문제로 부득이하게 테스트 서버를 첨부하였습니다.
-                수정되는대로 해당 서버로 수정하겠습니다.
-              </strong>
               <WorkDetail>WORk DETAIL</WorkDetail>
               <WorkTitle>생각대로 홈페이지</WorkTitle>
             </WorkTxtUp>
@@ -108,7 +104,7 @@ const Work1 = () => {
           </WorkTxt>
           <WorkBtn
             margin="0 auto"
-            onClick={() => window.open("https://nw.logiall.com")}
+            onClick={() => window.open("https://logiall.com/")}
           >
             바로가기
           </WorkBtn>

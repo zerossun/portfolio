@@ -82,12 +82,6 @@ const Work4 = () => {
               </DetailDiv>
             </DetailView>
           </WorkTxt>
-          <WorkBtn
-            margin="0 auto"
-            onClick={() => window.open("https://www.virtupia.com/user/start")}
-          >
-            바로가기
-          </WorkBtn>
         </WorkDiv>
       </WorkCon>
       <Footer />
