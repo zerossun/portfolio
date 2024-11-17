@@ -249,8 +249,7 @@ const Section2 = () => {
                 <strong style={{color: theme.black, fontWeight: 600}}>
                   로지올
                 </strong>
-                &nbsp; (플랫폼 1팀 프론트엔드팀 퍼블리셔, ux 개발자 / 2022.06 -
-                재직중)
+                &nbsp; (밸류업팀 퍼블리셔 / 2022.06 - 2024.08)
               </SubDd>
               <SubDd>
                 <strong style={{color: theme.black, fontWeight: 600}}>
