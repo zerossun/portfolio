@@ -280,7 +280,7 @@ const Section2 = () => {
                 <strong style={{color: theme.black, fontWeight: 600}}>
                   한양사이버대학교
                 </strong>
-                &nbsp; (소프트웨어학과 재학중)
+                &nbsp; (시작디자인학과 재학중)
               </SubDd>
               <SubDd>
                 <strong style={{color: theme.black, fontWeight: 600}}>
