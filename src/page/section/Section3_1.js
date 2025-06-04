@@ -101,6 +101,7 @@ const SliderWrapper = styled.div`
     align-items: center;
     justify-content: flex-start;
     border-right: 1px solid #efefef;
+    cursor: pointer;
   }
   .swiper-slide:last-of-type {
     border-right: 0px;
@@ -145,7 +146,7 @@ const Image = styled.div`
   border-radius: 12px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
   margin-bottom: 3rem;
-  cursor: pointer;
+
   overflow: hidden;
 
   // 초기 이미지

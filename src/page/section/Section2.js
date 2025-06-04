@@ -241,7 +241,7 @@ const Section2 = () => {
                 <SubDt>자격증</SubDt>
                 <SubDd>
                   <span style={{color: theme.black}}>컴퓨터그래픽기능사</span>
-                  &nbsp; (한국산업인력공단 / 2022.12.11)
+                  &nbsp; (한국산업인력공단 / 2024.12.11)
                 </SubDd>
                 <SubDd>
                   <span style={{color: theme.black}}>웹디자인기능사</span>

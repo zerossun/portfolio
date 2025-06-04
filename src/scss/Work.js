@@ -44,6 +44,7 @@ export const WorkImg = styled.img`
   object-fit: contain;
   vertical-align: top;
   max-height: 650px;
+  padding: 0.5rem 0;
 `;
 
 export const WorkTxt = styled.div`
