@@ -5,13 +5,14 @@ export const WorkCon = styled.div`
   width: 100%;
   position: relative;
   max-width: 1280px;
-  margin: 0 auto;
+  margin: 180px auto 0;
   padding: 0px 64px;
   min-height: 100vh;
   grid-template-rows: auto 1fr auto;
   min-height: 100vh;
   @media ${theme.md} {
     padding: 0px ${({theme}) => theme.padding.md};
+    margin: 60px auto 0;
   }
 `;
 
@@ -22,10 +23,12 @@ export const WorkDiv = styled.div`
 
 export const WorkImgDiv = styled.div`
   border-radius: 16px;
-  border: 1px solid ${({theme}) => theme.gray};
+  border: 1px solid #999;
   display: flex;
   align-items: center;
   height:100%;
+  padding:1rem 0;
+background:#f9f9f9;
 }
 `;
 
@@ -44,11 +47,20 @@ export const WorkImg = styled.img`
 `;
 
 export const WorkTxt = styled.div`
-  margin: ${theme.padding.lg} 0 64px;
+  margin-top: 10rem;
 `;
 export const WorkTxtUp = styled.div``;
+export const SubTxt = styled.div`
+  display: inline-flex;
+  align-items: baseline;
+  justify-content: flex-start;
+  gap: 0.5rem;
+  @media ${theme.md} {
+    display: block;
+  }
+`;
 export const WorkDetail = styled.span`
-  color: ${({theme}) => theme.gray};
+  color: ${({theme}) => theme.sub1};
   font-size: 1rem;
   font-weight: 400;
   line-height: 160%;
@@ -58,50 +70,62 @@ export const WorkTitle = styled.h2`
   font-weight: 700;
   line-height: 120%;
   word-break: keep-all;
-  font-size: 2.5rem;
-  color: ${({theme}) => theme.main};
-  padding: ${theme.padding.sm} 0;
+  font-size: 3rem;
+  color: ${({theme}) => theme.black};
+  padding-bottom: 0.65rem;
+  // border-bottom: 1px solid #666;
   @media ${theme.md} {
     font-size: 2rem;
   }
 `;
 export const WorkTxtDown = styled.div`
-  color: ${({theme}) => theme.disabled};
+  margin-top: 1.5rem;
+  color: #999;
 `;
 export const WorkSpan = styled.span`
-  margin-bottom: ${theme.padding.sm};
+  // margin-bottom: ${theme.padding.sm};
   display: block;
+  color: #666;
 `;
 export const WorkP = styled.p`
   color: ${({theme}) => theme.black};
   font-size: 1.125rem;
-  margin-bottom: ${theme.padding.md};
+  line-height: 200%;
 `;
 
-export const WorkBtnDiv = styled.div``;
+export const WorkBtnDiv = styled.div`
+  gap: 2rem;
+`;
 export const WorkBtn = styled.button`
-  border: 1px solid ${({theme}) => theme.main};
+  border: 1px solid #666;
   border-radius: 4px;
-  color: ${({theme}) => theme.main};
+  color: #666;
   display: block;
   padding: 16px 20px;
   transition: all 0.2s;
   cursor: pointer;
-  margin: ${(props) => props.margin};
+  margin: 5rem auto;
+  text-align: center;
   font-size: 1.25rem;
-  width: 128px;
+  width: 60%;
+  &:hover {
+    background: #eee;
+  }
 `;
 export const GitBtn = styled.button`
-  border: 1px solid ${({theme}) => theme.disabled};
+  border: 1px solid #666;
   border-radius: 4px;
-  color: ${({theme}) => theme.disabled};
+  color: #666;
   display: block;
   padding: 16px 20px;
   transition: all 0.2s;
   cursor: pointer;
-  margin: ${(props) => props.margin};
+  margin: 5rem auto;
   font-size: 1.25rem;
-  width: 128px;
+  width: 60%;
+  &:hover {
+    background: #eee;
+  }
 `;
 export const DetailView = styled.div`
   margin-top: ${theme.padding.xl};
@@ -111,9 +135,27 @@ export const DetailDiv = styled.div`
 `;
 export const ViewPic1 = styled.div`
   max-height: 650px;
+  @media ${theme.md} {
+    max-height: 100%;
+  }
 `;
 export const ViewPic2 = styled.div``;
 export const Video = styled.video`
   border-radius: 16px;
   height: 650px;
+  @media ${theme.md} {
+    height: 100%;
+  }
+`;
+
+export const Stack = styled.div`
+  margin-bottom: 0.4rem;
+  span {
+    font-size: 0.8rem;
+    padding: 6px 10px;
+    border-radius: 16px;
+    border: 0.5px solid #666;
+    color: #666;
+    margin-right: 6px;
+  }
 `;

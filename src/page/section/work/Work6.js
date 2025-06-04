@@ -1,5 +1,5 @@
 import React from "react";
-import WorkHeader from "../../../component/WorkHeader";
+
 import Pocket from "../../../assets/Detail/Pocket.png";
 import Pocket1 from "../../../assets/Detail/Pocket1.png";
 import Pocket2 from "../../../assets/Detail/Pocket2.png";
@@ -29,7 +29,6 @@ const Work6 = () => {
   return (
     <>
       <WorkCon>
-        <WorkHeader />
         <WorkDiv>
           <WorkImgDiv>
             <WorkPic>

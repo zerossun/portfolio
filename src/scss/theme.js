@@ -13,15 +13,15 @@ const spacing = {
 };
 
 const theme = {
-  main: "#eb4034",
-  sub1: "#EAA396",
-  sub2: "#FFE5DB",
-  sub3: "#56BABC",
-  sub4: "#9F0000",
-  white: "#FFFFFF",
-  disabled: "#a1a1a1",
+  main: "#ededed",
+  sub1: "#666",
+  sub2: "#d8f3dc",
+  sub3: "#74c69d",
+  white: "#f8f9fa",
+  disabled: "#495057",
   gray: "#ededed",
-  black: "#111",
+  black: "#212529",
+  
   sm: `(max-width:${size.sm})`,
   md: `(max-width:${size.md})`,
   lg: `(max-width:${size.lg})`,

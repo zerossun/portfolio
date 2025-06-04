@@ -9,11 +9,11 @@ const Header = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: ${({theme}) => theme.white};
+  border-bottom: 1px solid #999;
   height: 64px;
   top: 0;
-  width: calc(100% - 128px);
-  max-width: 1152px;
+  width: 100%;
+  max-width: 1280px;
   z-index: 1;
   left: 50%;
   transform: translateX(-50%);
@@ -22,18 +22,20 @@ const Header = styled.header`
   }
 `;
 const Type = styled.h3`
-  font-size: 1.5rem;
-  font-weight: 600;
+  font-size: 1rem;
+  font-weight: 400;
   color: ${({theme}) => theme.disabled};
 `;
-
-export default function WorkHeader() {
+const Type2 = styled.h3`
+  font-size: 1rem;
+  font-weight: 400;
+  color: ${({theme}) => theme.disabled};
+`;
+export default function MainHeader_1() {
   return (
     <Header>
-      <Link to={`/`}>
-        <BackArrow />
-      </Link>
       <Type>SunYoung Portfolio</Type>
+      <Type2>SunYoung</Type2>
     </Header>
   );
 }

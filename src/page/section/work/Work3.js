@@ -1,8 +1,12 @@
 import React from "react";
-import WorkHeader from "../../../component/WorkHeader";
+import styled from "styled-components";
+
+import GoHome from "../../../component/GoHome";
 import Virtupia from "../../../assets/Detail/Virtupia.png";
 import Virtupia1 from "../../../assets/Detail/Virtupia1.png";
 import Virtupia2 from "../../../assets/Detail/Virtupia2.png";
+import VirtupiaVid from "../../../assets/image/work/virtupia.mov";
+
 import Footer from "../../Footer";
 import {
   WorkCon,
@@ -20,42 +24,66 @@ import {
   WorkBtn,
   DetailView,
   DetailDiv,
+  Stack,
+  SubTxt,
 } from "../../../scss/Work";
 import theme from "../../../scss/theme";
+
+const VideoWrapper = styled.div`
+  width: 100%;
+  height: 50vmin;
+  overflow: hidden;
+  position: relative;
+  background: #f9f9f9;
+  border: 1px solid #999;
+  border-radius: 16px;
+  padding: 1rem;
+`;
+
+const StyledVideo = styled.video`
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* 화면에 꽉 채우기 */
+`;
 
 const Work3 = () => {
   return (
     <>
       <WorkCon>
-        <WorkHeader />
+        <GoHome />
         <WorkDiv>
-          <WorkImgDiv>
-            <WorkPic>
-              <source srcset={Virtupia} media={`(min-width: ${theme.md})`} />
-              <WorkImg src={Virtupia} alt="Virtupia" />
-            </WorkPic>
-          </WorkImgDiv>
+          <div className="flex flex-wrap items-start basis-full md:flex-nowrap">
+            <VideoWrapper className="basis-full md:basis-1/2">
+              <StyledVideo autoPlay loop muted playsInline>
+                <source src={VirtupiaVid} type="video/mp4" />
+              </StyledVideo>
+            </VideoWrapper>
+            <div className="mt-4 sm-0 md:mt-0 basis-full md:basis-1/2 md:ml-12">
+              <WorkTxtUp>
+                <WorkTitle>버튜피아</WorkTitle>
+                <SubTxt>
+                  <Stack>
+                    <span>React</span>
+                    <span>SCSS</span>
+                  </Stack>
+                  <WorkSpan>퍼블리싱 | 100%</WorkSpan>
+                </SubTxt>
+              </WorkTxtUp>
+              <WorkTxtDown>
+                <WorkP>
+                  버튜버 투표어플로서 팬들의 투표로 주간/월간 버튜버 순위를
+                  보여주는 서비스입니다.
+                  <br /> styled-commponented를 사용하여, react 프로젝트에서
+                  스타일링을 효과적으로 관리하고 프론트엔드와 보다 편리하게
+                  협업할 수 있었습니다.
+                  <br />
+                  웹/앱 형식으로 제작되어 어느 어플리케이션에서도 반응되게
+                  제작하였습니다.
+                </WorkP>
+              </WorkTxtDown>
+            </div>
+          </div>
           <WorkTxt>
-            <WorkTxtUp>
-              <WorkDetail>WORk DETAIL</WorkDetail>
-              <WorkTitle>버튜피아</WorkTitle>
-            </WorkTxtUp>
-            <WorkTxtDown>
-              <WorkSpan>퍼블리싱 | 100%</WorkSpan>
-              <WorkP>
-                버튜버 투표어플로서 팬들의 투표로 주간/월간 버튜버 순위를
-                보여주는 서비스입니다.
-              </WorkP>
-              <WorkP>
-                styled-commponented를 사용하여, react 프로젝트에서 스타일링을
-                효과적으로 관리하고 프론트엔드와 보다 편리하게 협업할 수
-                있었습니다.
-              </WorkP>
-              <WorkP>
-                웹/앱 형식으로 제작되어 어느 어플리케이션에서도 반응되게
-                제작하였습니다.
-              </WorkP>
-            </WorkTxtDown>
             <DetailView>
               <WorkDetail>Detail view</WorkDetail>
               <DetailDiv className="flex flex-col md:flex-row">

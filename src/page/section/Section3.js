@@ -1,6 +1,6 @@
 import React, {useEffect} from "react";
 import theme from "../../scss/theme";
-import styled from "styled-components";
+import styled, {keyframes} from "styled-components";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import {Link} from "react-router-dom";
@@ -25,12 +25,8 @@ import mobile from "../../assets/image/work/mobile.png";
 const Main3 = styled.div`
   width: 100%;
   margin: 0 auto;
-  padding-top: 100px;
   height: 100%;
-  overflow: hidden;
   display: block;
-  justify-content: center;
-  align-items: center;
   @media ${theme.md} {
     height: auto;
   }
@@ -212,7 +208,69 @@ const Image = styled.div`
   transition: background-image 0.3s ease-in-out;
 `;
 
-const Section2 = () => {
+const Container = styled.div`
+  position: relative;
+  width: 300px;
+  height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40vh;
+  overflow: hidden;
+  transition: 0.5s;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+`;
+
+const Anim1 = keyframes`
+from {
+  -webkit-mask-position: 100% 0;
+  mask-position: 100% 0;
+}
+to {
+  -webkit-mask-position: 0 0;
+  mask-position: 0 0;
+}
+`;
+const Anim2 = keyframes`
+from {
+  -webkit-mask-position: 0 0;
+  mask-position: 0 0;
+}
+to {
+  -webkit-mask-position: 100% 0;
+  mask-position: 100% 0;
+}`;
+
+const Btn = styled.button`
+  width: 101%;
+  height: 100%;
+  font-size: 40px;
+  background: #f00;
+  -webkit-mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png");
+  mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png");
+  -webkit-mask-size: 2300% 100%;
+  mask-size: 2300% 100%;
+  border: none;
+  color: #000;
+  cursor: pointer;
+  animation: ${Anim2} 0.7s steps(22) forwards;
+
+  &:hover {
+    animation: ${Anim1} 0.7s steps(22) forwards;
+  }
+`;
+
+const Mask = styled.span`
+  position: absolute;
+  color: #fff;
+  text-align: center;
+  width: 101%;
+  font-weight: lighter;
+  font-size: 40px;
+  margin-top: 25px;
+  overflow: hidden;
+`;
+
+const Section3 = () => {
   useEffect(() => {
     AOS.init();
   }, []);
@@ -310,6 +368,27 @@ const Section2 = () => {
                 </WorkItem>
               </Left>
             </Link>
+            <Link
+              to={`/Work4_1`}
+              data-aos="fade-left"
+              className="block w-full py-4 overflow-hidden"
+            >
+              <Right>
+                <WorkItem>
+                  <WorkImg bgColor="#FDE9E9">
+                    <AfterBorder position="right" />
+                    <Image initialImg={Virtupia} />
+                  </WorkImg>
+                  <WorkTxt>
+                    <WorkTitle>
+                      <WorkStrong>TRIP DO</WorkStrong>
+                      <WorkSpan>22.01 - 22.02</WorkSpan>
+                    </WorkTitle>
+                    <WorkP>HTML / CSS / jQuery / photoshop</WorkP>
+                  </WorkTxt>
+                </WorkItem>
+              </Right>
+            </Link>
           </ItemBox>
         </Pub>
         <Pub>
@@ -399,8 +478,14 @@ const Section2 = () => {
           </Swiper>
         </Pub>
       </WorkCon>
+      <Container>
+        <Mask class="mask">HOVER</Mask>
+        <Btn type="button" name="Hover">
+          HOVER
+        </Btn>
+      </Container>
     </Main3>
   );
 };
 
-export default Section2;
+export default Section3;

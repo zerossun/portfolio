@@ -17,7 +17,7 @@ const Contact = styled.h1`
   display: inline-block;
   color: ${({theme}) => theme.sub1};
   border-bottom: 7px solid ${({theme}) => theme.sub1};
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   line-height: 1;
   text-transform: uppercase;
   font-weight: 700;
@@ -29,19 +29,21 @@ const Contact = styled.h1`
   }
 `;
 const TxtDiv = styled.div``;
-const Txt = styled.p``;
+const Txt = styled.p`
+  font-size: 1.25rem;
+`;
 
 const Mail = styled.strong`
-  font-size: 4rem;
+  font-size: 5rem;
   font-weight: 700;
   padding: 16px 64px;
   display: block;
   line-height: 150%;
   position: absolute;
   top: 50%;
-  left: 0%;
+  left: 50%;
   width: 100%;
-  transform: translate(-50%, -0%);
+  transform: translate(-50%, 0%);
   white-space: normal;
   word-wrap: break-word;
   @media ${theme.md} {
@@ -80,11 +82,9 @@ function Footer() {
           <br />
           메일 보내주시면 1~2일 내로 회신드립니다 :-)
         </Txt>
-        <Mail data-aos="fade-up" className="animate__animated animate__bounce">
-          wonsunyoung0703@gmail.com
-        </Mail>
+        <Mail>wonsunyoung0703@gmail.com</Mail>
       </TxtDiv>
-      <Copy>© Copyright 2022 - 2024 SunYoung Won.</Copy>
+      <Copy>© Copyright 2022 - 2025 SunYoung Won.</Copy>
     </Foot>
   );
 }
