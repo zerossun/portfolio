@@ -8,6 +8,7 @@ import Work4_1 from "./page/section/work/Work4_1";
 import Work5 from "./page/section/work/Work5";
 import Work6 from "./page/section/work/Work6";
 import Work7 from "./page/section/work/Work7";
+import Work8 from "./page/section/work/Work8";
 
 import ScrollToTop from "./component/ScrollToTop";
 import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
@@ -32,6 +33,7 @@ function App() {
           <Route path="/work5" element={<Work5 />} />
           <Route path="/work6" element={<Work6 />} />
           <Route path="/work7" element={<Work7 />} />
+          <Route path="/work8" element={<Work8 />} />
         </Routes>
       </Router>
     </>

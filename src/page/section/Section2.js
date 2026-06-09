@@ -229,6 +229,10 @@ const Section2 = () => {
               <div className="relative">
                 <SubDt>경력</SubDt>
                 <SubDd>
+                  <span style={{color: theme.black}}>이젠아카데미</span>
+                  &nbsp; (웹서비스팀 퍼블리셔 / 2025.06 - 재직 중)
+                </SubDd>
+                <SubDd>
                   <span style={{color: theme.black}}>로지올</span>
                   &nbsp; (밸류업팀 퍼블리셔 / 2022.06 - 2024.08)
                 </SubDd>
@@ -256,7 +260,7 @@ const Section2 = () => {
                 <SubDt>교육</SubDt>
                 <SubDd>
                   <span style={{color: theme.black}}>한양사이버대학교</span>
-                  &nbsp; (시작디자인학과 재학중)
+                  &nbsp; (시작디자인학과 졸업 예정)
                 </SubDd>
                 <SubDd>
                   <span style={{color: theme.black}}>그린컴퓨터아카데미</span>

@@ -137,7 +137,7 @@ const TextSegment = styled.div`
       width: 100%;
       height: auto;
       font-weight: 700;
-      font-size: 5.5rem;
+      font-size: 4.5rem;
       font-style: normal;
       @media ${theme.lg} {
         font-size: 4.5rem;
@@ -193,7 +193,7 @@ const drawLine = keyframes`
     opacity: 0;
   }
   100% {
-    width: 76%;
+    width: 80%;
     opacity: 100%; 
     
   }
@@ -207,7 +207,7 @@ const moveMouse = keyframes`
 }
 
 100% {
-  left: 74%;
+  left: 78%;
   opacity: 100%;
 }
 `;
@@ -276,7 +276,7 @@ const blinkingCursor = keyframes`
 
 const Cursor = styled.b`
   font-weight: 700;
-  font-size: 5rem;
+  font-size: 4rem;
   text-align: center;
   white-space: nowrap;
   overflow: hidden;
