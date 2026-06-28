@@ -33,6 +33,9 @@ const Back = styled.div`
     line-height: 150%;
     overflow: hidden;
     padding: 0 1rem 0 0.5rem;
+    @media ${theme.sm} {
+      height: 2.4rem;
+    }
   }
   img {
     width: 1.5rem;
@@ -43,7 +46,7 @@ const Type = styled.h3`
   font-weight: 600;
   color: ${({theme}) => theme.disabled};
   @media ${theme.sm} {
-    font-size: 20px;
+    font-size: 16px;
   }
 `;
 
