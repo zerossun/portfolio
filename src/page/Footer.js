@@ -34,7 +34,7 @@ const Txt = styled.p`
 `;
 
 const Mail = styled.strong`
-  font-size: 5rem;
+  font-size: 4rem;
   font-weight: 700;
   padding: 16px 64px;
   display: block;
@@ -84,7 +84,7 @@ function Footer() {
         </Txt>
         <Mail>wonsunyoung0703@gmail.com</Mail>
       </TxtDiv>
-      <Copy>© Copyright 2022 - 2025 SunYoung Won.</Copy>
+      <Copy>© Copyright 2022 - 2026 SunYoung Won.</Copy>
     </Foot>
   );
 }

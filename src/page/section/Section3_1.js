@@ -14,6 +14,7 @@ import {Mousewheel, Autoplay} from "swiper/modules";
 // image
 import Logiall_hover from "../../assets/image/Wlogo/Logiall_1.png";
 import Logiway_hover from "../../assets/image/Wlogo/Logiway_1.png";
+import Ezen_hover from "../../assets/image/Wlogo/Ezen_logo.jpg";
 import Virtupia_hover from "../../assets/image/Wlogo/virtupia_1.png";
 import Momoquick_hover from "../../assets/image/Wlogo/momoquick_4.png";
 // import Logiway from "../../assets/image/Wlogo/Logiway2.png";
@@ -24,6 +25,8 @@ import mail from "../../assets/image/work/mail.png";
 import Logiall from "../../assets/image/work/Logiall.png";
 import Virtupia from "../../assets/image/work/Virtupia.png";
 import Logiway from "../../assets/image/work/Logiway.png";
+import Ezen_port from "../../assets/image/Wlogo/ezen_port.jpg";
+import Ezen_Edu from "../../assets/image/work/ezen-edu-main.jpg";
 import Momoquick from "../../assets/image/work/momoquick.png";
 import Momoquick_1 from "../../assets/image/work/Momoquick_1.png";
 import mobile from "../../assets/image/work/mobile.png";
@@ -243,6 +246,38 @@ const Section3_1 = () => {
               }}
               modules={[Mousewheel, Autoplay]}
             >
+              <SwiperSlide>
+                <ProjectSlide>
+                  <Image
+                    initialImg={Ezen_port}
+                    hoverImg={Ezen_hover}
+                    onClick={() => (window.location.href = `/Work8`)}
+                  />
+                  <b>사내 홈페이지 유지보수 개선</b>
+                  <Stack>
+                    <span>html</span>
+                    <span>SCSS</span>
+                    <span>javascript</span>
+                  </Stack>
+                  <p>Web/Mobile | 퍼블리싱 ∙ 유지보수</p>
+                </ProjectSlide>
+              </SwiperSlide>
+              <SwiperSlide>
+                <ProjectSlide>
+                  <Image
+                    initialImg={Ezen_Edu}
+                    hoverImg={Ezen_hover}
+                    onClick={() => (window.location.href = `/Work9`)}
+                  />
+                  <b>랜딩페이지 구축 및 운영</b>
+                  <Stack>
+                    <span>html</span>
+                    <span>SCSS</span>
+                    <span>javascript</span>
+                  </Stack>
+                  <p>Web/Mobile | 퍼블리싱 ∙ 유지보수</p>
+                </ProjectSlide>
+              </SwiperSlide>
               <SwiperSlide>
                 <ProjectSlide>
                   <Image

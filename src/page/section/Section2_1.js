@@ -24,6 +24,9 @@ import {ReactComponent as ZeplinSvg} from "../../assets/logo/ZeplinSvg.svg";
 import {ReactComponent as Ae} from "../../assets/logo/Ae.svg";
 import {ReactComponent as Pr} from "../../assets/logo/Pr.svg";
 import {ReactComponent as Visual} from "../../assets/logo/Visual.svg";
+import {ReactComponent as Webstorm} from "../../assets/logo/Webstorm.svg";
+import {ReactComponent as Midjourny} from "../../assets/logo/Midjourny.svg";
+import {ReactComponent as CapCut} from "../../assets/logo/CapCut.svg";
 // styled-components
 
 const Main2 = styled.div`
@@ -204,7 +207,7 @@ const Section2_1 = () => {
             </Svg>
           </Teck>
           <Teck>
-            <Tech_title>Tools</Tech_title>
+            <Tech_title>AI & Tools</Tech_title>
             <Tech_ul>
               <Tech_li>
                 <Tech_con>
@@ -219,13 +222,14 @@ const Section2_1 = () => {
               </Tech_li>
               <Tech_li>
                 <Tech_con>
-                  npm을 활용하여 원하는 패키지를 설치하고 활용할 수 있습니다.
+                  AI 툴을 활용하여 디자인 및 영상 콘텐츠의 다양한 비주얼 작업이
+                  가능합니다.
                 </Tech_con>
               </Tech_li>
               <Tech_li>
                 <Tech_con>
-                  Confluence을 활용하여 프로젝트 관리 및 문서를 협업하고 공유할
-                  수 있습니다.
+                  Webstorm를 활용하여 코드 작업부터 배포 관리까지 수행할 수
+                  있습니다.
                 </Tech_con>
               </Tech_li>
             </Tech_ul>
@@ -240,7 +244,13 @@ const Section2_1 = () => {
                 <Npm />
               </LiRound>
               <LiRound>
-                <Confluence />
+                <Webstorm />
+              </LiRound>
+              <LiRound>
+                <Midjourny />
+              </LiRound>
+              <LiRound>
+                <CapCut />
               </LiRound>
             </Svg>
           </Teck>

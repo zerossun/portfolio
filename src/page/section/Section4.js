@@ -40,7 +40,9 @@ const Container = styled.section`
   flex-wrap: wrap;
   gap: 2rem;
   justify-content: center;
-
+  &.mb-60 {
+    margin-bottom: 120px;
+  }
   @media (max-width: 768px) {
     flex-direction: column;
     padding: 1rem;
@@ -170,8 +172,8 @@ const Section4 = () => {
 
   return (
     <Main3>
-      <Strong>PROJECT</Strong>
-      <Container>
+      <Strong>Design</Strong>
+      <Container className="mb-60">
         <ProjectCard>
           <ImageWrapper>
             <img src={DoumImg} alt="doum" />
@@ -241,7 +243,10 @@ const Section4 = () => {
             </Button>
           </ButtonGroup>
         </ProjectCard>
+      </Container>
 
+      <Strong>Project</Strong>
+      <Container>
         <ProjectCard>
           <ImageWrapper>
             <img src={Todolist} alt="Todolist" />
