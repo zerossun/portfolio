@@ -146,7 +146,7 @@ const TextSegment = styled.div`
         font-size: 3.5rem;
       }
       @media ${theme.sm} {
-        font-size: 2.5rem;
+        font-size: 2.3rem;
       }
     }
   }
@@ -180,7 +180,7 @@ const TextSegment2 = styled.div`
           font-size: 3.5rem;
         }
         @media ${theme.sm} {
-          font-size: 2.5rem;
+          font-size: 2.3rem;
         }
       }
     }
@@ -289,7 +289,7 @@ const Cursor = styled.b`
     font-size: 3.2rem;
   }
   @media ${theme.sm} {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 `;
 

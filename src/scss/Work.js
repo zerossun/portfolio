@@ -38,6 +38,9 @@ export const WorkCon = styled.div`
     padding: 0px ${({theme}) => theme.padding.md};
     margin: 60px auto 0;
   }
+  @media ${theme.sm} {
+    padding: 0 24px;
+  }
 `;
 
 export const WorkDiv = styled.div`
@@ -72,6 +75,9 @@ export const WorkImg = styled.img`
 
 export const WorkTxt = styled.div`
   margin-top: 8rem;
+  @media ${theme.sm} {
+    margin-top: 60px;
+  }
 `;
 export const WorkTxtUp = styled.div``;
 export const SubTxt = styled.div`
@@ -101,6 +107,9 @@ export const WorkTitle = styled.h2`
   @media ${theme.md} {
     font-size: 2rem;
   }
+  @media ${theme.sm} {
+    font-size: 28px;
+  }
 `;
 export const WorkTxtDown = styled.div`
   margin-top: 1.5rem;
@@ -116,6 +125,9 @@ export const WorkP = styled.p`
   font-size: 1.125rem;
   line-height: 200%;
   word-break: keep-all;
+  @media ${theme.sm} {
+    font-size: 16px;
+  }
 `;
 
 export const WorkBtnDiv = styled.div`
@@ -135,6 +147,9 @@ export const WorkBtn = styled.button`
   width: 60%;
   &:hover {
     background: #eee;
+  }
+  @media ${theme.sm} {
+    font-size: 16px;
   }
 `;
 export const GitBtn = styled.button`
@@ -581,6 +596,9 @@ export const ImproveTwoCol = styled.div`
     flex-direction: column;
     gap: 48px;
     margin-bottom: 72px;
+  }
+  @media ${({theme}) => theme.sm} {
+    margin: 90px 0 60px;
   }
 `;
 

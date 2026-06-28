@@ -39,6 +39,9 @@ const Main2 = styled.div`
   @media ${theme.md} {
     height: auto;
   }
+  @media ${theme.sm} {
+    margin: 90px auto 120px;
+  }
 `;
 
 const LiRound = styled.div`
@@ -63,6 +66,11 @@ const Strong = styled.strong`
   text-decoration: underline;
   text-decoration-color: ${theme.main};
   text-decoration-thickness: 10px;
+  @media ${theme.sm} {
+    margin-bottom: 18px;
+    font-size: 2.2rem;
+    line-height: 1.5;
+  }
 `;
 
 const Teck = styled.div`

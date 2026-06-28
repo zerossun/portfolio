@@ -9,6 +9,9 @@ const Foot = styled.footer`
   text-align: center;
   width: 100%;
   position: relative;
+  @media ${theme.sm} {
+    min-height: 80vh;
+  }
 `;
 
 const Contact = styled.h1`
@@ -31,6 +34,9 @@ const Contact = styled.h1`
 const TxtDiv = styled.div``;
 const Txt = styled.p`
   font-size: 1.25rem;
+  @media ${theme.sm} {
+    font-size: 16px;
+  }
 `;
 
 const Mail = styled.strong`
@@ -48,7 +54,7 @@ const Mail = styled.strong`
   word-wrap: break-word;
   @media ${theme.md} {
     font-size: 2rem;
-    word-break: break-all;
+    word-break: keep-all;
     padding: 0 12px;
   }
 `;

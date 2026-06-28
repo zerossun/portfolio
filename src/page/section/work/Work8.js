@@ -219,20 +219,6 @@ const Work8 = () => {
                   </ExampleGrid>
                 </ExampleSection>
               </PortfolioImprove>
-              <PortfolioImprove>
-                <ImproveHead>
-                  <ImproveNum>01</ImproveNum>
-                  <ImproveMainTitle>포트폴리오 운영 구조 개선</ImproveMainTitle>
-                </ImproveHead>
-
-                <ImproveDesc>
-                  기존에는 포트폴리오 콘텐츠 등록 시 하나의 이미지로 개성이
-                  부족하였고, 코드 또한 이미지·영상·버튼 위치를 개별적으로
-                  맞춰야 해 반복 수정이 많아 운영 효율이 떨어지는 구조였습니다.
-                  이에 따라 영상 기능 추가 및 모두가 쉽게 사용할 수 있는 코드로
-                  구조를 통일시켰습니다.
-                </ImproveDesc>
-              </PortfolioImprove>
             </DetailView>
           </WorkTxt>
           <WorkBtn

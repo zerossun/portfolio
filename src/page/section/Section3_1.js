@@ -45,6 +45,9 @@ const Main3 = styled.div`
   @media ${theme.md} {
     height: auto;
   }
+  @media ${theme.sm} {
+    margin: 90px auto 120px;
+  }
 `;
 
 const StickySection = styled.section`
@@ -90,6 +93,11 @@ const LeftPanel = styled.div`
     position: relative;
     height: auto;
     border-right: 0px;
+  }
+  @media ${theme.sm} {
+    margin-bottom: 18px;
+    font-size: 2.2rem;
+    line-height: 1.5;
   }
 `;
 

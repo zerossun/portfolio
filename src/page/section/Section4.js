@@ -33,6 +33,9 @@ const Main3 = styled.div`
   @media ${theme.md} {
     height: auto;
   }
+  @media ${theme.sm} {
+    margin: 90px auto 120px;
+  }
 `;
 
 const Container = styled.section`
@@ -45,7 +48,7 @@ const Container = styled.section`
   }
   @media (max-width: 768px) {
     flex-direction: column;
-    padding: 1rem;
+    padding: 0 1rem;
   }
 `;
 
@@ -57,6 +60,11 @@ const Strong = styled.strong`
   text-align: center;
   font-size: 2.5rem;
   margin-bottom: 3rem;
+  @media ${theme.sm} {
+    margin-bottom: 18px;
+    font-size: 2.2rem;
+    line-height: 1.5;
+  }
 `;
 
 const ProjectCard = styled.div`
@@ -100,6 +108,7 @@ const Title = styled.h3`
   margin: 0.5rem 0 1rem 0;
   display: flex;
   align-items: center;
+  word-break: keep-all;
 `;
 
 const Meta = styled.p`

@@ -17,6 +17,9 @@ const Main2 = styled.div`
   @media ${theme.md} {
     height: auto;
   }
+  @media ${theme.sm} {
+    margin: 90px auto 120px;
+  }
 `;
 
 const Image = styled.div`
