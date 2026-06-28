@@ -127,6 +127,7 @@ export const WorkP = styled.p`
   word-break: keep-all;
   @media ${theme.sm} {
     font-size: 16px;
+    line-height: 180%;
   }
 `;
 
@@ -1109,7 +1110,7 @@ export const SummaryQuote = styled.div`
     padding: 36px;
     width: 100%;
     p {
-      font-size: 14px;
+      font-size: 16px;
       padding-left: 0;
       line-height: 1.8;
       text-align: center;

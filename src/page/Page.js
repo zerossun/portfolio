@@ -19,7 +19,7 @@ const Section1Wrapper = styled.section`
   display: block;
   margin: 0 auto;
   @media ${theme.md} {
-    margin-bottom: 120px;
+    margin-bottom: 90px;
     height: 100%;
   }
 `;
